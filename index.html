@@ -1,165 +1,142 @@
 <!DOCTYPE html>
 <html lang="de">
-<header style="background: url('Banner.jpg') center/cover no-repeat; padding: 5rem 1rem; color: #fff;">
-  <h1>Asia Imbiss Musterstadt</h1>
-  <p>Frische asiatische Küche – schnell, lecker und günstig.</p>
-</header>
-
-    }
-    header {
-      background: #b30000;
-      color: #fff;
-      padding: 2.5rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0 0 .5rem;
-      font-size: 2rem;
-    }
-    header p {
+<head>
+  <meta charset="UTF-8">
+  <title>Asia Imbiss Musterstadt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
       margin: 0;
-      font-size: 1.05rem;
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
     }
+
+    /* Banner */
+    .banner {
+      width: 100%;
+      height: 350px;
+      background: url('Banner.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 1rem;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+      margin: 0;
+    }
+
     main {
       max-width: 900px;
       margin: 0 auto;
       padding: 1.5rem 1rem 3rem;
       background: #fff;
     }
-    section {
-      margin-bottom: 2rem;
-    }
+
     h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
       border-bottom: 2px solid #eee;
       padding-bottom: .4rem;
+      margin-top: 2rem;
+      font-size: 1.4rem;
     }
-    .btn-download {
+
+    .btn {
       display: inline-block;
-      margin-top: .75rem;
-      padding: .75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 4px;
-      border: 1px solid #b30000;
-      font-weight: 600;
-      text-align: center;
-    }
-    .btn-download-primary {
+      padding: .7rem 1.4rem;
       background: #b30000;
       color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 0.5rem;
     }
-    .btn-download-primary:hover {
-      opacity: 0.9;
-    }
-    .info-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .info-list li {
-      margin-bottom: .4rem;
-    }
+
     footer {
       text-align: center;
       font-size: .85rem;
       color: #777;
-      padding: 1.5rem 1rem 2rem;
-    }
-    a {
-      color: #b30000;
+      padding: 2rem 1rem;
     }
   </style>
 </head>
 <body>
 
-<header>
+<!-- BANNER -->
+<div class="banner">
   <h1>Asia Imbiss Musterstadt</h1>
-  <p>Frische asiatische Küche – schnell, lecker und günstig.</p>
-</header>
+</div>
 
 <main>
 
   <!-- Einleitung -->
-  <section id="einleitung">
-    <h2>Willkommen bei Ihrem Asia Imbiss</h2>
+  <section>
+    <h2>Willkommen</h2>
     <p>
-      Wir bieten Ihnen eine Auswahl an frisch zubereiteten asiatischen Gerichten –
-      zum Mitnehmen oder direkt vor Ort. Ob knusprige Ente, gebratene Nudeln oder vegetarische Spezialitäten:
-      bei uns ist für jeden Geschmack etwas dabei.
-    </p>
-    <p>
-      Schauen Sie vorbei oder bestellen Sie bequem vorab telefonisch.
+      Frische und leckere asiatische Gerichte – täglich für Sie zubereitet.
+      Ob gebratene Nudeln, knusprige Ente oder vegetarische Spezialitäten:  
+      Bei uns findet jeder etwas!
     </p>
   </section>
 
-  <!-- Speisekarte als PDF -->
-  <section id="speisekarte">
+  <!-- Speisekarte -->
+  <section>
     <h2>Speisekarte</h2>
-    <p>
-      Unsere komplette Speisekarte mit allen Gerichten, Preisen und Menüs finden Sie hier als PDF.
-    </p>
-    <a
-      href="speisekarte.pdf"
-      class="btn-download btn-download-primary"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Speisekarte als PDF herunterladen
-    </a>
-    <p style="font-size:.9rem; color:#666; margin-top:.5rem;">
-      Hinweis: Ersetzen Sie die Datei <code>speisekarte.pdf</code> im Projektordner durch Ihre eigene Speisekarte.
+    <p>Hier können Sie unsere Speisekarte als PDF herunterladen:</p>
+
+    <a href="speisekarte.pdf" class="btn" target="_blank">Speisekarte herunterladen</a>
+
+    <p style="font-size: .85rem; color:#666;">
+      Datei einfach im Repository ersetzen: <code>speisekarte.pdf</code>
     </p>
   </section>
 
   <!-- Kontakt -->
-  <section id="kontakt">
+  <section>
     <h2>Kontakt & Öffnungszeiten</h2>
-    <ul class="info-list">
-      <li><strong>Adresse:</strong> Musterstraße 12, 01234 Musterstadt</li>
-      <li><strong>Telefon:</strong> <a href="tel:+491234567890">+49 (0)123 456 7890</a></li>
-      <li><strong>E-Mail:</strong> <a href="mailto:info@asia-imbiss-musterstadt.de">info@asia-imbiss-musterstadt.de</a></li>
-    </ul>
-    <p style="margin-top:.75rem;">
-      <strong>Öffnungszeiten:</strong><br>
+    <p><strong>Adresse:</strong> Musterstraße 12, 01234 Musterstadt</p>
+    <p><strong>Telefon:</strong> <a href="tel:+491234567890">+49 123 4567890</a></p>
+    <p><strong>E-Mail:</strong> info@asia-imbiss.de</p>
+
+    <p><strong>Öffnungszeiten:</strong><br>
       Montag – Samstag: 11:00 – 21:00 Uhr<br>
       Sonntag & Feiertage: 12:00 – 20:00 Uhr
     </p>
   </section>
 
   <!-- Impressum -->
-  <section id="impressum">
+  <section>
     <h2>Impressum</h2>
-    <p><strong>Angaben gemäß § 5 TMG</strong></p>
-    <p>
-      Asia Imbiss Musterstadt<br>
+    <p><strong>Asia Imbiss Musterstadt</strong><br>
       Inhaber: Max Mustermann<br>
       Musterstraße 12<br>
-      01234 Musterstadt<br>
-      Deutschland
+      01234 Musterstadt
     </p>
+
     <p>
-      Telefon: +49 (0)123 456 7890<br>
-      E-Mail: info@asia-imbiss-musterstadt.de
+      Telefon: +49 123 4567890<br>
+      E-Mail: info@asia-imbiss.de
     </p>
+
     <p>
-      Umsatzsteuer-ID: DE123456789<br>
-      Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Max Mustermann, Anschrift wie oben.
+      Umsatzsteuer-ID: DE123456789
     </p>
   </section>
 
 </main>
 
 <footer>
-  &copy; <span id="jahr"></span> Asia Imbiss Musterstadt – Alle Rechte vorbehalten.
+  © <span id="jahr"></span> Asia Imbiss Musterstadt
 </footer>
 
 <script>
-  // Aktuelles Jahr automatisch einfügen
   document.getElementById('jahr').textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
-
-
